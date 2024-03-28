@@ -40,10 +40,10 @@ if calc_type == ("investment" or "Investment" or "INVESTMENT"):
 elif calc_type == ("bond" or "Bond" or "BOND"):
     print("\nPlease enter")
     h_value = int(input("the present value of the house (e.g. 100000): "))
-    bint = int(input("the interest rate (e.g. 7): "))
+    bond_int = int(input("the interest rate (e.g. 7): "))
     months = int(input("the number of months you plan to take to repay the bond (e.g. 120): "))
 
-    bint_rate = (bint/100)/12
+    bint_rate = (bond_int/100)/12
     repayment = (bint_rate * h_value)/(1 - (1 + bint_rate)**(-months))
     repayment = round(repayment, 2) 
     print(f"\nYou will have to repay {repayment} pounds each month for {months} months.\n")
