@@ -1,7 +1,7 @@
 import math
 
 # print initial menu for reference.
-print("investment - to calculate the amount of interest you'll earn on your investment")
+print("\ninvestment - to calculate the amount of interest you'll earn on your investment")
 print("bond - to calculate the amount you'll have to pay on a home loan\n")
 
 # Request 'investment' or 'bond' input from the user.
